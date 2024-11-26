@@ -28,7 +28,7 @@ export default {
           params: {
             q: city,
             appid: API_KEY,
-            units: 'metric', // Temperature in Celsius
+            units: 'imperial', // Temperature in Fahrenheit
           },
         });
 
@@ -47,3 +47,24 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.hourly-container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.chart-container {
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+</style>

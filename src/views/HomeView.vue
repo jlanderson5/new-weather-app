@@ -65,7 +65,7 @@ export default {
             params: {
               q: city,
               appid: API_KEY,
-              units: 'metric', // Use metric units (Celsius)
+              units: 'imperial', // Use metric units (Fahrenheit)
             },
           }
         );

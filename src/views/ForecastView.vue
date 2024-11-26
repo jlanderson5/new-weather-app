@@ -41,7 +41,7 @@
             params: {
               q: city,
               appid: API_KEY,
-              units: 'metric',
+              units: 'imperial', // Use metric units (Fahrenheit)
             },
           }
         );
@@ -72,4 +72,41 @@
     },
   };
   </script>
+
+<style scoped>
+.forecast-container {
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+table {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+</style>
+
   
